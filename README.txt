@@ -25,7 +25,7 @@ Song implements Iterable - Песни, которые содержат ноты
 5)public void changeMood(Note.Mood mood,int start) - меняет лад нот с позиции start и до конца песни
 6)public void changeMood(Note.Mood mood) - меняет лад нот во всей песне
 7)public boolean compare(Song song,int start, int end) - сравнивает песни с позиции start по позицию end(не включительно)
-8)public boolean compare(Song song,int start) - сравнивает песни с позиции start до конца строки
+8)public boolean compare(Song song,int start) - сравнивает песни с позиции start до конца песни
 9)public boolean compare(Song song) - сравнивает песни
 10)public void play() - выводит в консоль все ноты в песне. Мажорные с большой буквы, минорные - с маленькой
 11)public ArrayList<Page> intoPages(int numNotesOnPage) - переводит песню в коллекцию из страниц
