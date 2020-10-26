@@ -12,21 +12,21 @@ public class Song implements Iterable {
     public ArrayList<Page> intoPages(int numNotesOnPage){
         return PageFactory.createPages(numNotesOnPage,notes);
     }
-    public void addNote(Note note){
+    public void addNote(@NotNull Note note){
         notes.add(note);
     }
-    public void addNote(Note [] notes1){
+    public void addNote(@NotNull Note [] notes1){
         for (Note note:notes1
              ) {
             notes.add(note);
         }
     }
 
-    public void setParent(MelodyNote parent) {
+    public void addInMelodyNote(@NotNull MelodyNote parent) {
         this.parent = parent;
     }
 
-    public Song(Note[] notes1) {
+    public Song(@NotNull Note[] notes1) {
         for (Note note:notes1
         ) {
             notes.add(note);
@@ -48,7 +48,7 @@ public class Song implements Iterable {
     }
 
     public void changeMood(Note.Mood mood,int start, int end){
-        for (int i = start; i <= end; i++) {
+        for (int i = start; i < end; i++) {
             notes.get(i).setMusicalMood(mood);
         }
     }

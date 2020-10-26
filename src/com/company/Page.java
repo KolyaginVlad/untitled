@@ -29,4 +29,8 @@ public class Page extends Song{
     public void setNextPage(Page nextPage) {
         this.nextPage = nextPage;
     }
+
+    public int getNumberPage() {
+        return numberPage;
+    }
 }

@@ -10,7 +10,7 @@ public class MelodyNote implements Iterable{
         for (Song s:songs
              ) {
             this.songs.add(s);
-            s.setParent(this);
+            s.addInMelodyNote(this);
         }
         isOpen = false;
     }
@@ -22,7 +22,7 @@ public class MelodyNote implements Iterable{
     public void addSong(Song song){
         if (isOpen){
             songs.add(song);
-            song.setParent(this);
+            song.addInMelodyNote(this);
         }
     }
 
