@@ -1,6 +1,6 @@
 MelodyNote implements Iterable - Книга с песнями
 
-(!!!ВНИМАНИЕ!!! Пока не был вызван метод iterator() не может быть использованная для добавления песен !!!ВНИМАНИЕ!!!)
+(!!!ВНИМАНИЕ!!! Пока не был вызван метод iterator() не может быть использованна для добавления песен !!!ВНИМАНИЕ!!!)
 
 Конструкторы:
 1)public MelodyNote()
@@ -25,9 +25,9 @@ Song implements Iterable - Песни, которые содержат ноты
 5)public void changeMood(Note.Mood mood,int start) - меняет лад нот с позиции start и до конца песни
 6)public void changeMood(Note.Mood mood) - меняет лад нот во всей песне
 7)public boolean compare(Song song,int start, int end) - сравнивает песни с позиции start по позицию end(не включительно)
-8)public void changeMood(Note.Mood mood,int start) - сравнивает песни с позиции startи до конца песни
-9)public void changeMood(Note.Mood mood) - сравнивает песни
-10)public void play() - выводит в консоль все ноты в песне. Мажорные с большой быкву, минорные - с маленькой
+8)public boolean compare(Song song,int start) - сравнивает песни с позиции start до конца строки
+9)public boolean compare(Song song) - сравнивает песни
+10)public void play() - выводит в консоль все ноты в песне. Мажорные с большой буквы, минорные - с маленькой
 11)public ArrayList<Page> intoPages(int numNotesOnPage) - переводит песню в коллекцию из страниц
 12)public Iterator iterator() - отдаёт объект типа Iterator
 
